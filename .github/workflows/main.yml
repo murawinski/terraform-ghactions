@@ -49,7 +49,7 @@ jobs:
         run: terraform init -backend-config="storage_account_name=${{ env.AZURE_STORAGE }}"
         
       - name: Terraform Plan
-        run: terraform plan -output=tfplan
+        run: terraform plan -out=tfplan
         
       - name: Terraform Apply
         run: terraform apply tfplan
