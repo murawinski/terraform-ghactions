@@ -24,8 +24,8 @@ jobs:
       ARM_SUBSCRIPTION_ID: '8c4ea633-42af-426a-b034-b38ab4cc748d'
       ARM_TENANT_ID: 'e3ee3d9a-2890-4fb3-ad83-6251ecfa5ed7'
       ARM_CLIENT_ID: '24928240-93e8-42ac-8f69-5e0d80a8120c'
-      ARM_CLIENT_CLIENT: ${{ secrets.ARM_CLIENT_SECRET }}
-      AZURE_STORAGE: 'terraformdemo342159889'
+      ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+      AZURE_STORAGE: 'terraformdemo34215988439'
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -53,5 +53,3 @@ jobs:
         
       - name: Terraform Apply
         run: terraform apply tfplan
-
-
